@@ -19,11 +19,7 @@ for i in range(len(df1['Phone'])):
     birleşik = name + username
     password = birleşik.replace(' ', '')
 
-    message = f"Mobil Bayiliğiniz aktif olmuştur. Deterjanpazari.com adresinden hesabınıza giriş yaparak kontrolleri sağlayınız.\
-Hesap Bilgileriniz;         \
-        Mail: {row[0]}      \
-        Şifre: {password}      \
-Referans kodunuz, hesabım sayfasının alt kısmında bulunmaktadır. Bu kod ile getireceğiniz her üye sizin müşteriniz olarak hesabınıza tanımlanacaktır. İYİ GÜNLER DİLERİZ. deterjanpazari.com"
+    message = f" something to say"
     time.sleep(4)
     try:
         web.open("https://web.whatsapp.com/send?phone=+90"+str(row[3])+"&text="+message)
