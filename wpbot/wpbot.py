@@ -16,10 +16,9 @@ for i in range(len(df1['Phone'])):
     row = df1.loc[i]
     name = str(row[1]).lower()
     username = str(row[2]).lower()
-    birleşik = name + username
-    password = birleşik.replace(' ', '')
+ 
 
-    message = f" something to say"
+    message = f" hi {name} {username}, your email address is {row[0]}"
     time.sleep(4)
     try:
         web.open("https://web.whatsapp.com/send?phone=+90"+str(row[3])+"&text="+message)
